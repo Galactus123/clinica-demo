@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { clinic } from "@/config/clinic";
+import Logo from "@/components/Logo";
 import Icon from "@/components/Icon";
 
 export default function Header() {
@@ -41,32 +42,35 @@ export default function Header() {
       id="inicio"
       className={`fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-500 ${
         isScrolled
-          ? "bg-navy-900/97 backdrop-blur-md shadow-2xl shadow-black/20"
-          : "bg-navy-900"
+          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/8"
+          : "bg-white"
       }`}
     >
+      {/* Top bar */}
+      <div className="hidden lg:block bg-primary text-white text-sm">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-end items-center h-9 gap-6">
+          <a href={`tel:${clinic.whatsapp.number}`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
+            <Icon name="phone" className="w-3.5 h-3.5" />
+            +258 84 219 9338
+          </a>
+          <a href={`tel:+258866579000`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
+            <Icon name="phone" className="w-3.5 h-3.5" />
+            +258 86 657 9000
+          </a>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between sm:h-20">
-          {/* Logo & Name */}
+          {/* Logo */}
           <a
             href="#inicio"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("#inicio");
             }}
-            className="flex items-center gap-3"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-navy-900 sm:h-11 sm:w-11">
-              <Icon name="smile" className="h-5 w-5 sm:h-6 sm:w-6" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold leading-tight text-white sm:text-xl tracking-wide">
-                {clinic.shortName}
-              </span>
-              <span className="hidden text-[10px] font-semibold uppercase tracking-[0.2em] text-accent sm:block">
-                Dentária
-              </span>
-            </div>
+            <Logo />
           </a>
 
           {/* Desktop Navigation */}
@@ -79,7 +83,7 @@ export default function Header() {
                   e.preventDefault();
                   handleNavClick(link.href);
                 }}
-                className="rounded-lg px-3.5 py-2 text-sm font-medium text-navy-200 transition-colors hover:bg-white/10 hover:text-white"
+                className="rounded-lg px-3.5 py-2 text-sm font-medium text-navy-700 transition-colors hover:bg-navy-50 hover:text-primary"
               >
                 {link.label}
               </a>
@@ -92,10 +96,9 @@ export default function Header() {
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-navy-900 shadow-lg shadow-accent/20 transition-all hover:bg-accent-dark hover:shadow-xl hover:shadow-accent/30 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-2.5 text-sm font-bold text-primary-dark shadow-md shadow-accent/20 transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/30 active:scale-[0.98]"
             >
-              <Icon name="message-circle" className="h-4 w-4" />
-              Marcar consulta
+              Agendar Consulta
             </a>
           </div>
 
@@ -103,27 +106,23 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative flex h-10 w-10 items-center justify-center rounded-xl text-white transition-colors hover:bg-white/10 lg:hidden"
+            className="relative flex h-10 w-10 items-center justify-center rounded-xl text-navy-700 transition-colors hover:bg-navy-50 lg:hidden"
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           >
             <div className="flex h-5 w-5 flex-col items-center justify-center gap-1.5">
               <span
-                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
-                  isMobileMenuOpen
-                    ? "translate-y-0.5 rotate-45"
-                    : ""
+                className={`block h-0.5 w-5 rounded-full bg-navy-700 transition-all duration-300 ${
+                  isMobileMenuOpen ? "translate-y-0.5 rotate-45" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
+                className={`block h-0.5 w-5 rounded-full bg-navy-700 transition-all duration-300 ${
                   isMobileMenuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
-                  isMobileMenuOpen
-                    ? "-translate-y-0.5 -rotate-45"
-                    : ""
+                className={`block h-0.5 w-5 rounded-full bg-navy-700 transition-all duration-300 ${
+                  isMobileMenuOpen ? "-translate-y-0.5 -rotate-45" : ""
                 }`}
               />
             </div>
@@ -133,7 +132,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isMobileMenuOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -143,25 +142,18 @@ export default function Header() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-navy-900 shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex h-full flex-col">
           {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-navy-900">
-                <Icon name="smile" className="h-5 w-5" />
-              </div>
-              <span className="text-lg font-bold text-white">
-                {clinic.shortName}
-              </span>
-            </div>
+          <div className="flex items-center justify-between border-b border-navy-100 px-6 py-5">
+            <Logo />
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="flex h-10 w-10 items-center justify-center rounded-xl text-navy-300 transition-colors hover:bg-white/10 hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-xl text-navy-500 transition-colors hover:bg-navy-50 hover:text-navy-700"
               aria-label="Fechar menu"
             >
               <Icon name="x" className="h-5 w-5" />
@@ -179,15 +171,11 @@ export default function Header() {
                     e.preventDefault();
                     handleNavClick(link.href);
                   }}
-                  className="flex items-center gap-3 rounded-xl px-4 py-3.5 text-base font-medium text-navy-200 transition-all hover:bg-white/10 hover:text-white"
+                  className="flex items-center gap-3 rounded-xl px-4 py-3.5 text-base font-medium text-navy-700 transition-all hover:bg-navy-50 hover:text-primary"
                   style={{
-                    transitionDelay: isMobileMenuOpen
-                      ? `${index * 50}ms`
-                      : "0ms",
+                    transitionDelay: isMobileMenuOpen ? `${index * 50}ms` : "0ms",
                     opacity: isMobileMenuOpen ? 1 : 0,
-                    transform: isMobileMenuOpen
-                      ? "translateX(0)"
-                      : "translateX(20px)",
+                    transform: isMobileMenuOpen ? "translateX(0)" : "translateX(20px)",
                   }}
                 >
                   <Icon name="chevron-right" className="h-4 w-4 text-accent" />
@@ -198,15 +186,14 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu CTA */}
-          <div className="border-t border-white/10 px-6 py-6">
+          <div className="border-t border-navy-100 px-6 py-6">
             <a
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-6 py-3.5 text-base font-bold text-navy-900 shadow-lg shadow-accent/20 transition-all hover:bg-accent-dark active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-2.5 rounded-lg bg-accent px-6 py-3.5 text-base font-bold text-primary-dark shadow-md shadow-accent/20 transition-all hover:bg-accent-dark active:scale-[0.98]"
             >
-              <Icon name="message-circle" className="h-5 w-5" />
-              Marcar consulta
+              Agendar Consulta
             </a>
             <p className="mt-3 text-center text-xs text-navy-400">
               Resposta rápida pelo WhatsApp

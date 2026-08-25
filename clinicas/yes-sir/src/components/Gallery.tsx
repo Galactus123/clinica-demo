@@ -40,16 +40,19 @@ export default function Gallery() {
     <section id="galeria" className="bg-navy-50 py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent-dark uppercase tracking-wider mb-4">
-            Galeria
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-12 h-1 bg-accent rounded-full" />
+            <span className="text-sm font-bold text-accent uppercase tracking-wider">
+              Galeria
+            </span>
+            <div className="w-12 h-1 bg-accent rounded-full" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Conheça a nossa clínica
           </h2>
           <p className="text-navy-500 max-w-2xl mx-auto text-lg leading-relaxed">
             Um espaço moderno, acolhedor e equipado com tecnologia de ponta,
-            pensado para proporcionar o máximo conforto e segurança em cada
-            atendimento.
+            pensado para proporcionar o máximo conforto e segurança.
           </p>
         </div>
 
@@ -57,7 +60,7 @@ export default function Gallery() {
           {galleryItems.map((item) => (
             <div
               key={item.label}
-              className="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-navy-100 cursor-pointer transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+              className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-navy-100 cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               <Image
                 src={item.src}
@@ -66,7 +69,7 @@ export default function Gallery() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="absolute bottom-4 left-5 text-sm font-semibold text-white tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                 {item.label}
               </span>

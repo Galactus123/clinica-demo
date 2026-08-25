@@ -8,25 +8,42 @@ export default function Services() {
   return (
     <section id="servicos" className="py-20 bg-navy-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header with image */}
-        <div className="relative mb-16 rounded-2xl overflow-hidden shadow-2xl">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-12 h-1 bg-accent rounded-full" />
+            <span className="text-sm font-bold text-accent uppercase tracking-wider">
+              Serviços
+            </span>
+            <div className="w-12 h-1 bg-accent rounded-full" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Nossos Serviços
+          </h2>
+          <p className="text-navy-500 max-w-2xl mx-auto text-lg">
+            Oferecemos uma gama completa de serviços odontológicos com
+            tecnologia de ponta e profissionais altamente qualificados.
+          </p>
+        </div>
+
+        {/* Banner Image */}
+        <div className="relative mb-16 rounded-xl overflow-hidden shadow-xl">
           <div className="relative h-64 sm:h-80 md:h-96">
-              <Image
-                src="/images/cobb dental, dentist, local dentist, kennesaw….jpg"
-                alt="Exame dentário detalhado com espelho profissional - tratamento odontológico"
-                fill
-                className="object-cover"
-                sizes="100vw"
-              />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-transparent" />
+            <Image
+              src="/images/cobb dental, dentist, local dentist, kennesaw….jpg"
+              alt="Exame dentário detalhado com espelho profissional"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/50 to-transparent" />
             <div className="absolute inset-0 flex items-center">
               <div className="px-8 sm:px-12 max-w-2xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Cuidados dentários para toda a família
-                </h2>
-                <p className="text-navy-200 text-lg">
-                  Oferecemos uma gama completa de serviços odontológicos com
-                  tecnologia de ponta e profissionais altamente qualificados para
+                </h3>
+                <p className="text-white/90 text-lg">
+                  Tecnologia de ponta e profissionais altamente qualificados para
                   cuidar da saúde bucal de você e da sua família.
                 </p>
               </div>
@@ -39,7 +56,7 @@ export default function Services() {
           {clinic.services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-navy-100"
+              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group border border-navy-100"
             >
               <div className="mb-4">
                 <Icon
@@ -48,7 +65,7 @@ export default function Services() {
                   className="text-accent group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-semibold text-navy-900 mb-2">
+              <h3 className="font-semibold text-primary mb-2">
                 {service.title}
               </h3>
               <p className="text-navy-500 text-sm leading-relaxed">

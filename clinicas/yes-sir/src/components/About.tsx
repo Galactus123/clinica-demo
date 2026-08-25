@@ -10,11 +10,14 @@ export default function About() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
-            <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent-dark uppercase tracking-wider">
-              Sobre a Clínica
-            </span>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-12 h-1 bg-accent rounded-full" />
+              <span className="text-sm font-bold text-accent uppercase tracking-wider">
+                Sobre a Clínica
+              </span>
+            </div>
 
-            <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl">
               {clinic.name}
             </h2>
 
@@ -35,7 +38,7 @@ export default function About() {
 
           {/* Right Column - Clinic Interior Image */}
           <div className="relative">
-            <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-2xl sm:h-96">
+            <div className="relative h-80 w-full overflow-hidden rounded-xl shadow-2xl sm:h-96">
               <Image
                 src="/images/Kelowna Allergy Clinic.jpg"
                 alt="Interior moderno e profissional da Clínica Dentária Yes Sir em Maputo"
@@ -43,11 +46,10 @@ export default function About() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/40 to-transparent" />
             </div>
             {/* Decorative accent */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-2xl -z-10" />
-            <div className="absolute -top-4 -left-4 w-16 h-16 bg-navy-200/50 rounded-xl -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-xl -z-10" />
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-navy-100 rounded-lg -z-10" />
           </div>
         </div>
       </div>
