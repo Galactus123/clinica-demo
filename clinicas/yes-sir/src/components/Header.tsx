@@ -39,10 +39,10 @@ export default function Header() {
   return (
     <header
       id="inicio"
-      className={`fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-500 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/5"
-          : "bg-white"
+          ? "bg-navy-900/97 backdrop-blur-md shadow-2xl shadow-black/20"
+          : "bg-navy-900"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -54,16 +54,16 @@ export default function Header() {
               e.preventDefault();
               handleNavClick("#inicio");
             }}
-            className="flex items-center gap-2.5"
+            className="flex items-center gap-3"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-600 text-white sm:h-10 sm:w-10">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-navy-900 sm:h-11 sm:w-11">
               <Icon name="smile" className="h-5 w-5 sm:h-6 sm:w-6" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold leading-tight text-gray-900 sm:text-xl">
+              <span className="text-lg font-bold leading-tight text-white sm:text-xl tracking-wide">
                 {clinic.shortName}
               </span>
-              <span className="hidden text-[10px] font-medium uppercase tracking-wider text-cyan-600 sm:block">
+              <span className="hidden text-[10px] font-semibold uppercase tracking-[0.2em] text-accent sm:block">
                 Dentária
               </span>
             </div>
@@ -79,7 +79,7 @@ export default function Header() {
                   e.preventDefault();
                   handleNavClick(link.href);
                 }}
-                className="rounded-lg px-3.5 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-cyan-50 hover:text-cyan-600"
+                className="rounded-lg px-3.5 py-2 text-sm font-medium text-navy-200 transition-colors hover:bg-white/10 hover:text-white"
               >
                 {link.label}
               </a>
@@ -92,7 +92,7 @@ export default function Header() {
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-cyan-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cyan-600/25 transition-all hover:bg-cyan-700 hover:shadow-xl hover:shadow-cyan-600/30 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-navy-900 shadow-lg shadow-accent/20 transition-all hover:bg-accent-dark hover:shadow-xl hover:shadow-accent/30 active:scale-[0.98]"
             >
               <Icon name="message-circle" className="h-4 w-4" />
               Marcar consulta
@@ -103,24 +103,24 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative flex h-10 w-10 items-center justify-center rounded-xl text-gray-700 transition-colors hover:bg-gray-100 lg:hidden"
+            className="relative flex h-10 w-10 items-center justify-center rounded-xl text-white transition-colors hover:bg-white/10 lg:hidden"
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           >
             <div className="flex h-5 w-5 flex-col items-center justify-center gap-1.5">
               <span
-                className={`block h-0.5 w-5 rounded-full bg-gray-700 transition-all duration-300 ${
+                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
                   isMobileMenuOpen
                     ? "translate-y-0.5 rotate-45"
                     : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 rounded-full bg-gray-700 transition-all duration-300 ${
+                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
                   isMobileMenuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 rounded-full bg-gray-700 transition-all duration-300 ${
+                className={`block h-0.5 w-5 rounded-full bg-white transition-all duration-300 ${
                   isMobileMenuOpen
                     ? "-translate-y-0.5 -rotate-45"
                     : ""
@@ -133,7 +133,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isMobileMenuOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -143,25 +143,25 @@ export default function Header() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-navy-900 shadow-2xl transition-transform duration-300 ease-out lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex h-full flex-col">
           {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between border-b border-gray-100 px-6 py-5">
-            <div className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-600 text-white">
+          <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-navy-900">
                 <Icon name="smile" className="h-5 w-5" />
               </div>
-              <span className="text-lg font-bold text-gray-900">
+              <span className="text-lg font-bold text-white">
                 {clinic.shortName}
               </span>
             </div>
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="flex h-10 w-10 items-center justify-center rounded-xl text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700"
+              className="flex h-10 w-10 items-center justify-center rounded-xl text-navy-300 transition-colors hover:bg-white/10 hover:text-white"
               aria-label="Fechar menu"
             >
               <Icon name="x" className="h-5 w-5" />
@@ -179,7 +179,7 @@ export default function Header() {
                     e.preventDefault();
                     handleNavClick(link.href);
                   }}
-                  className="flex items-center gap-3 rounded-xl px-4 py-3.5 text-base font-medium text-gray-700 transition-all hover:bg-cyan-50 hover:text-cyan-600"
+                  className="flex items-center gap-3 rounded-xl px-4 py-3.5 text-base font-medium text-navy-200 transition-all hover:bg-white/10 hover:text-white"
                   style={{
                     transitionDelay: isMobileMenuOpen
                       ? `${index * 50}ms`
@@ -190,7 +190,7 @@ export default function Header() {
                       : "translateX(20px)",
                   }}
                 >
-                  <Icon name="chevron-right" className="h-4 w-4 text-cyan-500" />
+                  <Icon name="chevron-right" className="h-4 w-4 text-accent" />
                   {link.label}
                 </a>
               ))}
@@ -198,17 +198,17 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu CTA */}
-          <div className="border-t border-gray-100 px-6 py-6">
+          <div className="border-t border-white/10 px-6 py-6">
             <a
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-xl bg-cyan-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-cyan-600/25 transition-all hover:bg-cyan-700 active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-2.5 rounded-full bg-accent px-6 py-3.5 text-base font-bold text-navy-900 shadow-lg shadow-accent/20 transition-all hover:bg-accent-dark active:scale-[0.98]"
             >
               <Icon name="message-circle" className="h-5 w-5" />
               Marcar consulta
             </a>
-            <p className="mt-3 text-center text-xs text-gray-400">
+            <p className="mt-3 text-center text-xs text-navy-400">
               Resposta rápida pelo WhatsApp
             </p>
           </div>
