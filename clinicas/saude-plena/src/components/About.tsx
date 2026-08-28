@@ -12,19 +12,29 @@ export default function About() {
     <section id="sobre" className="bg-gray-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left Column - Image */}
+          {/* Left Column - Images */}
           <div className="relative order-2 lg:order-1">
             <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-2xl shadow-primary/10 sm:h-96">
               <Image
-                src="/images/clinic-interior.jpg"
-                alt="Interior moderno e equipado da Saúde Plena"
+                src="/images/Consultório Psicologia.jpg"
+                alt="Interior do Consultório Saúde Plena — sala de espera em Sommerschield, Maputo"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Floating cards */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
+            {/* Secondary image */}
+            <div className="absolute -bottom-8 -right-8 w-36 h-36 sm:w-44 sm:h-44 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden sm:block">
+              <Image
+                src="/images/home care.jpg"
+                alt="Atendimento humanizado e próximo"
+                fill
+                className="object-cover"
+                sizes="176px"
+              />
+            </div>
+            {/* Floating card */}
+            <div className="absolute -top-4 -left-4 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10">
                   <HeartPulse className="h-5 w-5 text-accent" />

@@ -69,10 +69,10 @@ export default function Hero() {
           <div className="relative hidden lg:block">
             <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
               <Image
-                src="/images/doctor-consultation.jpg"
-                alt="Médico a realizar consulta em ambiente clínico moderno"
+                src="/images/Doctor _ Health.jpg"
+                alt="Profissional de saúde com estetoscópio em ambiente clínico"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="50vw"
                 priority
               />

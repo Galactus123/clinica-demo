@@ -23,10 +23,10 @@ export default function Benefits() {
           <div className="relative">
             <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/medical-care.jpg"
-                alt="Profissional de saúde a cuidar de paciente"
+                src="/images/_National Family Caregivers Month.jpg"
+                alt="Profissional de saúde a acolher paciente com cuidado e atenção"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
