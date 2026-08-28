@@ -16,8 +16,8 @@ export default function Footer() {
               {clinic.location.address}
             </p>
             <p className="text-sm leading-relaxed text-navy-300">
-              Cuidando do seu sorriso com excelência e carinho. Agende a sua
-              consulta e descubra o poder de um sorriso saudável.
+              Primeira clínica especializada na prevenção e tratamento da
+              diabetes em Moçambique. Tratamento com HEBERPROT-B.
             </p>
           </div>
 
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">
-              Horário de Funcionamento
+              Horário
             </h3>
             <ul className="space-y-2 text-sm">
               {clinic.hours.map((entry, index) => (
@@ -59,9 +59,17 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">
-              Contato
+              Contacto
             </h3>
             <ul className="space-y-3">
+              <li className="text-navy-200 text-sm">
+                <Icon name="phone" className="w-4 h-4 mr-2 text-accent inline" />
+                +258 82 518 1818
+              </li>
+              <li className="text-navy-200 text-sm">
+                <Icon name="phone" className="w-4 h-4 mr-2 text-accent inline" />
+                +258 86 318 1818
+              </li>
               <li>
                 <a
                   href={clinic.whatsapp.getLink()}

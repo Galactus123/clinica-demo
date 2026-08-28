@@ -36,6 +36,19 @@ export default function Location() {
               </div>
             </div>
 
+            {/* Phone */}
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-accent/10">
+                <Icon name="phone" size={24} className="text-accent" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-primary">Telefone</h3>
+                <p className="mt-1 text-navy-600">
+                  +258 82 518 1818 / +258 86 318 1818
+                </p>
+              </div>
+            </div>
+
             {/* Hours */}
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-accent/10">
@@ -80,7 +93,7 @@ export default function Location() {
                 Google Maps
               </p>
               <p className="mt-2 text-sm text-navy-400">
-                Integração com Google Maps em breve
+                Av. Paulo Samuel Kankhomba, 1170
               </p>
             </div>
           </div>

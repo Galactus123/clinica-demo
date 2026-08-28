@@ -20,7 +20,7 @@ export default function Process() {
             Como funciona o nosso atendimento
           </h2>
           <p className="text-navy-500 max-w-2xl mx-auto text-lg">
-            Um processo simples e transparente para cuidar da sua saúde oral
+            Um processo simples e transparente para cuidar da sua saúde
             com conforto e confiança.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function Process() {
                   <div className="hidden md:block absolute top-10 left-[calc(50%+32px)] w-[calc(100%-64px)] h-0.5 bg-accent/20 z-0" />
                 )}
 
-                <div className="relative z-10 flex items-center justify-center w-16 h-16 rounded-lg bg-accent text-primary-dark text-2xl font-bold shadow-lg shadow-accent/30 mb-5">
+                <div className="relative z-10 flex items-center justify-center w-16 h-16 rounded-lg bg-accent text-white text-2xl font-bold shadow-lg shadow-accent/30 mb-5">
                   {item.step}
                 </div>
 
@@ -61,8 +61,8 @@ export default function Process() {
         <div className="mt-16 relative mx-auto max-w-3xl">
           <div className="relative h-64 sm:h-80 rounded-xl overflow-hidden shadow-xl">
             <Image
-              src="/images/tampa-bay-hightower-dermatology-doctors-group-sun-city-lifestyle-commercial-editorial-professional-p.jpg"
-              alt="Consulta profissional na Clínica Dentária Yes Sir"
+              src="/images/medical-care.jpg"
+              alt="Atendimento profissional na Clínica Marcelino dos Santos"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"

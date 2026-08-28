@@ -1,31 +1,30 @@
 export const clinic = {
-  name: "Clínica Dentária Yes Sir",
-  shortName: "Yes Sir",
-  tagline: "O seu sorriso merece cuidados de excelência.",
+  name: "Clínica Marcelino dos Santos",
+  shortName: "CMS",
+  tagline: "Prevenção e Tratamento da Diabetes em Maputo.",
 
   whatsapp: {
-    number: "258000000000",
+    number: "258825181818",
     getLink: (message?: string) => {
-      const msg = message || "Olá, gostaria de marcar uma consulta na Clínica Dentária Yes Sir.";
-      return `https://wa.me/258000000000?text=${encodeURIComponent(msg)}`;
+      const msg = message || "Olá, gostaria de marcar uma consulta na Clínica Marcelino dos Santos.";
+      return `https://wa.me/258825181818?text=${encodeURIComponent(msg)}`;
     },
   },
 
   location: {
-    address: "Karl Marx, Maputo, Moçambique",
+    address: "Av. Paulo Samuel Kankhomba, 1170, Maputo, Moçambique",
     city: "Maputo",
     country: "Moçambique",
   },
 
   hours: [
-    { days: "Segunda a sexta-feira", time: "08h00 – 18h00" },
-    { days: "Sábado", time: "08h00 – 14h00" },
-    { days: "Domingo", time: "Encerrado" },
+    { days: "Segunda a domingo", time: "08h00 – 20h00" },
+    { days: "Emergência", time: "Disponível 24 horas" },
   ],
 
   social: {
-    instagram: "#",
-    facebook: "#",
+    instagram: "https://www.instagram.com/clinica_marcelinodossantos/",
+    facebook: "https://www.facebook.com/profile.php/?id=61576116748193",
   },
 
   navLinks: [
@@ -39,91 +38,81 @@ export const clinic = {
 
   services: [
     {
-      icon: "stethoscope",
-      title: "Consultas e Avaliação",
-      description: "Avaliação completa da saúde oral para diagnóstico preciso e plano de tratamento personalizado.",
-    },
-    {
-      icon: "sparkles",
-      title: "Limpeza Dentária",
-      description: "Remoção profissional de tártaro e placa bacteriana para manter os dentes saudáveis e limpos.",
-    },
-    {
-      icon: "shield",
-      title: "Prevenção e Higiene Oral",
-      description: "Orientação e tratamentos preventivos para proteger os seus dentes e gengivas.",
-    },
-    {
-      icon: "wrench",
-      title: "Restauração Dentária",
-      description: "Restaurações estéticas e funcionais com materiais de alta qualidade.",
-    },
-    {
-      icon: "heart",
-      title: "Tratamento de Cáries",
-      description: "Tratamento eficaz para eliminação de cáries e restauração da saúde dentária.",
-    },
-    {
       icon: "activity",
-      title: "Tratamento de Canal",
-      description: "Endodontia com técnicas modernas para preservar o dente natural.",
-    },
-    {
-      icon: "minus-circle",
-      title: "Extração Dentária",
-      description: "Extrações realizadas com segurança e cuidado, incluso dentes do siso.",
-    },
-    {
-      icon: "sun",
-      title: "Clareamento Dentário",
-      description: "Tratamentos de clareamento para um sorriso mais branco e luminoso.",
-    },
-    {
-      icon: "layers",
-      title: "Próteses Dentárias",
-      description: "Próteses fixas e removíveis para substituição de dentes perdidos.",
-    },
-    {
-      icon: "align-left",
-      title: "Ortodontia",
-      description: "Aparelhos ortodônticos para alinhamento dentário e correção da mordida.",
-    },
-    {
-      icon: "anchor",
-      title: "Implantes Dentários",
-      description: "Implantes de última geração para reabilitação oral completa.",
+      title: "Prevenção da Diabetes",
+      description: "Programas de prevenção e rastreio para deteção precoce da diabetes.",
     },
     {
       icon: "heart-pulse",
-      title: "Tratamento de Gengivas",
-      description: "Tratamento especializado para doenças gengivais e periodontais.",
+      title: "Tratamento da Diabetes",
+      description: "Tratamento de primeira linha com HEBERPROT-B, reduzindo 70% as hipóteses de amputação.",
+    },
+    {
+      icon: "stethoscope",
+      title: "Consultas Médicas",
+      description: "Avaliação clínica completa com profissionais especializados em diabetes.",
+    },
+    {
+      icon: "flask",
+      title: "Exames de Laboratório",
+      description: "Análises clínicas, hormonais e de rastreio realizadas na clínica.",
+    },
+    {
+      icon: "shield",
+      title: "Prevenção de Complicações",
+      description: "Monitorização e prevenção de complicações associadas à diabetes.",
+    },
+    {
+      icon: "heart",
+      title: "Acompanhamento Integral",
+      description: "Cuidado integral da saúde com foco na qualidade de vida do paciente.",
+    },
+    {
+      icon: "users",
+      title: "Educação em Diabetes",
+      description: "Sessões gratuitas de educação para pacientes, familiares e cuidadores.",
+    },
+    {
+      icon: "microscope",
+      title: "Análises Hormonais",
+      description: "Resultados de exames hormonais disponíveis no dia seguinte.",
     },
     {
       icon: "baby",
-      title: "Odontopediatria",
-      description: "Cuidados dentários especializados para crianças em ambiente acolhedor.",
+      title: "Saúde da Mulher",
+      description: "Acompanhamento de saúde feminina e prevenção de complicações.",
     },
     {
-      icon: "gem",
-      title: "Estética Dentária",
-      description: "Procedimentos estéticos para harmonizar o sorriso com naturalidade.",
+      icon: "eye",
+      title: "Rastreios Preventivos",
+      description: "Exames de rastreio gratuitos para toda a família.",
+    },
+    {
+      icon: "clipboard",
+      title: "Frotis Sanguíneo",
+      description: "Exames de sangue periférico para diagnóstico preciso.",
+    },
+    {
+      icon: "droplet",
+      title: "Microalbuminúria",
+      description: "Exames de microalbuminúria para avaliação renal em diabéticos.",
     },
   ],
 
   testimonials: [
     {
-      name: "Maria S.",
-      text: "Excelente atendimento! A equipa foi muito profissional e atenciosa durante toda a consulta.",
+      name: "Fernando T.",
+      text: "A Clínica Marcelino dos Santos mudou a minha vida. O tratamento com HEBERPROT-B evitou uma amputação. Sou eternamente grato à equipa.",
       rating: 5,
     },
     {
-      name: "Carlos M.",
-      text: "A clínica tem um ambiente muito limpo e acolhedor. Recomendo a todos os meus amigos.",
+      name: "Ana M.",
+      text: "As sessões de educação em diabetes são fantásticas. Aprendi a conviver com a doença de forma positiva. Recomendo a todos.",
       rating: 5,
     },
     {
-      name: "Ana R.",
-      text: "Fiquei muito satisfeita com o resultado do tratamento. Equipa competente e dedicada.",
+      name: "Carlos D.",
+      text: "Profissionalismo e humanismo num só lugar. A clínica é moderna e os profissionais são extremamente atenciosos.",
       rating: 5,
     },
   ],
@@ -131,27 +120,27 @@ export const clinic = {
   faq: [
     {
       question: "Como posso marcar uma consulta?",
-      answer: "Pode marcar uma consulta através do nosso WhatsApp ou visitando-nos diretamente na clínica. Estamos aqui para ajudá-lo.",
+      answer: "Pode marcar uma consulta através do nosso WhatsApp +258 82 518 1818 ou visitando-nos diretamente na clínica na Av. Paulo Samuel Kankhomba, 1170.",
     },
     {
-      question: "Quais são os horários de atendimento?",
-      answer: "Atendemos de segunda a sexta-feira das 08h00 às 18h00 e aos sábados das 08h00 às 14h00. Domingos e feriados encontram-se encerrados.",
+      question: "Qual é o horário de atendimento?",
+      answer: "Atendemos de segunda a domingo das 08h00 às 20h00. Para emergências, estamos disponíveis 24 horas.",
     },
     {
-      question: "Onde fica a Clínica Dentária Yes Sir?",
-      answer: "Estamos localizados na Rua Karl Marx, em Maputo, Moçambique. Venha visitar-nos!",
+      question: "Onde fica a Clínica Marcelino dos Santos?",
+      answer: "Estamos localizados na Av. Paulo Samuel Kankhomba, nº 1170, em Maputo, Moçambique.",
     },
     {
-      question: "A clínica atende aos sábados?",
-      answer: "Sim, atendemos aos sábados das 08h00 às 14h00.",
+      question: "A clínica trata apenas diabetes?",
+      answer: "Somos especializados no tratamento da diabetes, mas oferecemos consultas médicas gerais, exames de laboratório e rastreios preventivos para toda a família.",
     },
     {
-      question: "Que serviços dentários estão disponíveis?",
-      answer: "Oferecemos uma ampla gama de serviços dentários, incluindo consultas, limpezas, restaurações, tratamentos de canal, implantes, ortodontia, clareamento e muito mais.",
+      question: "O que é o HEBERPROT-B?",
+      answer: "O HEBPERPROT-B é um medicamento injectável criado em Cuba que reduz em 70% as hipóteses de amputação em pacientes com úlcera diabética.",
     },
     {
       question: "Posso entrar em contacto pelo WhatsApp?",
-      answer: "Sim! Pode contactar-nos pelo WhatsApp para informações, dúvidas ou para marcar a sua consulta. Utilize o botão de WhatsApp disponível na página.",
+      answer: "Sim! Pode contactar-nos pelo WhatsApp +258 82 518 1818 para informações, dúvidas ou para marcar a sua consulta.",
     },
   ],
 
@@ -171,46 +160,46 @@ export const clinic = {
     {
       step: 3,
       title: "Faça a Avaliação",
-      description: "Realizamos uma avaliação completa da sua saúde oral.",
+      description: "Realizamos uma avaliação completa da sua saúde.",
       icon: "search",
     },
     {
       step: 4,
-      title: "Receba a Orientação",
-      description: "Apresentamos o melhor plano de tratamento para o seu caso.",
+      title: "Receba o Tratamento",
+      description: "Iniciamos o plano de tratamento personalizado para o seu caso.",
       icon: "check-circle",
     },
   ],
 
   whyChooseUs: [
     {
-      title: "Atendimento Personalizado",
-      description: "Cada paciente é único. Oferecemos tratamentos adaptados às suas necessidades.",
-      icon: "user-check",
+      title: "Primeira Clínica de Diabetes",
+      description: "Primeira clínica especializada na prevenção e tratamento da diabetes em Moçambique.",
+      icon: "award",
     },
     {
-      title: "Ambiente Profissional",
-      description: "Instalações modernas, limpas e equipadas com tecnologia de ponta.",
-      icon: "building",
+      title: "Tratamento de Excelência",
+      description: "HEBERPROT-B — tratamento de primeira linha que reduz 70% as amputações.",
+      icon: "shield",
     },
     {
-      title: "Cuidados Centrados no Paciente",
-      description: "O seu conforto e bem-estar são a nossa prioridade em cada consulta.",
+      title: "Ambiente Acolhedor",
+      description: "Um espaço criado para cuidar de si, com conforto e profissionalismo.",
       icon: "heart-handshake",
     },
     {
-      title: "Diversos Serviços Dentários",
-      description: "Uma vasta gama de serviços para cuidar de toda a família num só lugar.",
-      icon: "grid",
+      title: "Exames no Próprio Dia",
+      description: "Resultados de exames hormonais disponíveis no dia seguinte.",
+      icon: "clock",
     },
     {
-      title: "Localização Conveniente",
-      description: "Localizados no centro de Maputo, na Rua Karl Marx, com fácil acesso.",
-      icon: "map-pin",
+      title: "Educação e Prevenção",
+      description: "Sessões gratuitas de educação em diabetes para pacientes e familiares.",
+      icon: "book-open",
     },
     {
-      title: "Horário Flexível",
-      description: "Atendemos de segunda a sábado para se adaptar à sua rotina.",
+      title: "24 Horas de Atendimento",
+      description: "Disponibilidade 24 horas para emergências e cuidados urgentes.",
       icon: "clock",
     },
   ],

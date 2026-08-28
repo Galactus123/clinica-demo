@@ -4,34 +4,34 @@ import Image from "next/image";
 
 const galleryItems = [
   {
-    src: "/images/5770305768338033.jpg",
-    alt: "Dentista a realizar exame oral em paciente com equipamentos modernos",
-    label: "Exame Dentário",
+    src: "/images/clinic-interior.jpg",
+    alt: "Interior moderno e equipado da Clínica Marcelino dos Santos",
+    label: "A Clínica",
   },
   {
-    src: "/images/Kelowna Allergy Clinic.jpg",
-    alt: "Interior moderno e equipado do consultório da Clínica Dentária Yes Sir",
-    label: "Consultório",
+    src: "/images/doctor-consultation.jpg",
+    alt: "Consulta médica especializada em diabetes",
+    label: "Consultas",
   },
   {
-    src: "/images/cobb dental, dentist, local dentist, kennesaw….jpg",
-    alt: "Avaliação dental detalhada com espelho profissional",
-    label: "Avaliação",
-  },
-  {
-    src: "/images/Affordable Dentures & Implants in Rockford, IL.jpg",
-    alt: "Modelo de próteses dentárias de alta qualidade",
-    label: "Próteses",
-  },
-  {
-    src: "/images/Today's Care.jpg",
-    alt: "Profissional de saúde dedicado e sorridente",
-    label: "Equipe",
-  },
-  {
-    src: "/images/tampa-bay-hightower-dermatology-doctors-group-sun-city-lifestyle-commercial-editorial-professional-p.jpg",
-    alt: "Consulta personalizada entre médico e paciente",
+    src: "/images/medical-care.jpg",
+    alt: "Atendimento humanizado aos pacientes",
     label: "Atendimento",
+  },
+  {
+    src: "/images/patient-care.jpg",
+    alt: "Acompanhamento integral do paciente",
+    label: "Acompanhamento",
+  },
+  {
+    src: "/images/clinic-modern.jpg",
+    alt: "Equipamentos modernos de última geração",
+    label: "Tecnologia",
+  },
+  {
+    src: "/images/health-team.jpg",
+    alt: "Equipa multidisciplinar de saúde",
+    label: "Equipa",
   },
 ];
 

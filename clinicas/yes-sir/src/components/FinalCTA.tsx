@@ -11,8 +11,8 @@ export default function FinalCTA() {
         {/* Left - Image */}
         <div className="relative h-72 sm:h-80 lg:h-auto lg:min-h-[500px]">
           <Image
-            src="/images/Com a Estética Vitae é possível transformar o seu….jpg"
-            alt="Transformação do sorriso antes e depois do tratamento dentário"
+            src="/images/medical-care.jpg"
+            alt="Atendimento médico de excelência na Clínica Marcelino dos Santos"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -29,12 +29,12 @@ export default function FinalCTA() {
 
           <div className="relative z-10 text-center max-w-lg">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Cuide hoje do seu sorriso.
+              Cuide hoje da sua saúde.
             </h2>
 
             <p className="text-lg sm:text-xl text-white/80 mb-10 leading-relaxed">
-              Agende a sua consulta e descubra como podemos transformar a sua saúde bucal
-              com atendimento personalizado e de qualidade.
+              Quando precisar de acompanhamento especializado, a Clínica
+              Marcelino dos Santos está pronta para receber você.
             </p>
 
             <a
@@ -48,7 +48,7 @@ export default function FinalCTA() {
             </a>
 
             <p className="mt-6 text-sm text-white/60">
-              Resposta rápida via {clinic.name}
+              Resposta rápida via {clinic.shortName}
             </p>
           </div>
         </div>

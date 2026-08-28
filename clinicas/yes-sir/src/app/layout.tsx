@@ -16,27 +16,27 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Clínica Dentária Yes Sir | Maputo, Moçambique",
+  title: "Clínica Marcelino dos Santos | Prevenção e Tratamento da Diabetes em Maputo",
   description:
-    "Clínica dentária premium em Karl Marx, Maputo. Serviços completos de odontologia: consultas, limpezas, implantes, ortodontia, clareamento e mais. Marque a sua consulta pelo WhatsApp.",
+    "Primeira clínica especializada na prevenção e tratamento da diabetes em Moçambique. HEBERPROT-B, exames de laboratório, educação em diabetes. Abertos 24 horas. Av. Paulo Samuel Kankhomba, 1170, Maputo.",
   keywords: [
-    "clínica dentária",
-    "dentista Maputo",
-    "odontologia Moçambique",
-    "implantes dentários",
-    "clareamento dentário",
-    "ortodontia",
-    "tratamento dental",
-    "Yes Sir",
-    "Oral Premium",
+    "clínica diabetes",
+    "diabetes Maputo",
+    "tratamento diabetes Moçambique",
+    "HEBERPROT-B",
+    "prevenção diabetes",
+    "exames laboratório",
+    "Marcelino dos Santos",
+    "clínica Maputo",
+    "diabetes tratamento",
   ],
   openGraph: {
-    title: "Clínica Dentária Yes Sir | Maputo, Moçambique",
+    title: "Clínica Marcelino dos Santos | Prevenção e Tratamento da Diabetes",
     description:
-      "O seu sorriso merece cuidados de excelência. Serviços completos de odontologia em Maputo.",
+      "Primeira clínica especializada na prevenção e tratamento da diabetes em Moçambique. HEBERPROT-B — reduz 70% as amputações.",
     type: "website",
     locale: "pt_MZ",
-    siteName: "Clínica Dentária Yes Sir",
+    siteName: "Clínica Marcelino dos Santos",
   },
   robots: {
     index: true,

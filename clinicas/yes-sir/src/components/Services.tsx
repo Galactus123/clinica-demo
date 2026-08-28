@@ -18,11 +18,11 @@ export default function Services() {
             <div className="w-12 h-1 bg-accent rounded-full" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Nossos Serviços
+            Os nossos serviços
           </h2>
           <p className="text-navy-500 max-w-2xl mx-auto text-lg">
-            Oferecemos uma gama completa de serviços odontológicos com
-            tecnologia de ponta e profissionais altamente qualificados.
+            Oferecemos uma gama completa de serviços médicos com foco na
+            prevenção e tratamento da diabetes.
           </p>
         </div>
 
@@ -30,8 +30,8 @@ export default function Services() {
         <div className="relative mb-16 rounded-xl overflow-hidden shadow-xl">
           <div className="relative h-64 sm:h-80 md:h-96">
             <Image
-              src="/images/cobb dental, dentist, local dentist, kennesaw….jpg"
-              alt="Exame dentário detalhado com espelho profissional"
+              src="/images/clinic-interior.jpg"
+              alt="Espaço moderno da Clínica Marcelino dos Santos"
               fill
               className="object-cover"
               sizes="100vw"
@@ -40,11 +40,11 @@ export default function Services() {
             <div className="absolute inset-0 flex items-center">
               <div className="px-8 sm:px-12 max-w-2xl">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Cuidados dentários para toda a família
+                  Cuidados de saúde especializados
                 </h3>
                 <p className="text-white/90 text-lg">
-                  Tecnologia de ponta e profissionais altamente qualificados para
-                  cuidar da saúde bucal de você e da sua família.
+                  Prevenção, diagnóstico e tratamento da diabetes com tecnologia
+                  de ponta e profissionais cubanos e moçambicanos.
                 </p>
               </div>
             </div>

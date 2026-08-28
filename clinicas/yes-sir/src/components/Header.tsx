@@ -49,14 +49,18 @@ export default function Header() {
       {/* Top bar */}
       <div className="hidden lg:block bg-primary text-white text-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-end items-center h-9 gap-6">
-          <a href={`tel:${clinic.whatsapp.number}`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
+          <a href={`tel:+258825181818`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Icon name="phone" className="w-3.5 h-3.5" />
-            +258 84 219 9338
+            +258 82 518 1818
           </a>
-          <a href={`tel:+258866579000`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
+          <a href={`tel:+258863181818`} className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Icon name="phone" className="w-3.5 h-3.5" />
-            +258 86 657 9000
+            +258 86 318 1818
           </a>
+          <span className="flex items-center gap-1.5 text-accent">
+            <Icon name="clock" className="w-3.5 h-3.5" />
+            24 Horas
+          </span>
         </div>
       </div>
 
@@ -96,9 +100,9 @@ export default function Header() {
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-2.5 text-sm font-bold text-primary-dark shadow-md shadow-accent/20 transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/30 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-accent/20 transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/30 active:scale-[0.98]"
             >
-              Agendar Consulta
+              Marcar Consulta
             </a>
           </div>
 
@@ -191,9 +195,9 @@ export default function Header() {
               href={clinic.whatsapp.getLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2.5 rounded-lg bg-accent px-6 py-3.5 text-base font-bold text-primary-dark shadow-md shadow-accent/20 transition-all hover:bg-accent-dark active:scale-[0.98]"
+              className="flex w-full items-center justify-center gap-2.5 rounded-lg bg-accent px-6 py-3.5 text-base font-bold text-white shadow-md shadow-accent/20 transition-all hover:bg-accent-dark active:scale-[0.98]"
             >
-              Agendar Consulta
+              Marcar Consulta
             </a>
             <p className="mt-3 text-center text-xs text-navy-400">
               Resposta rápida pelo WhatsApp

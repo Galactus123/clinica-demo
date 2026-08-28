@@ -11,17 +11,16 @@ export default function WhyChooseUs() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-12 h-1 bg-accent rounded-full" />
             <span className="text-sm font-bold text-accent uppercase tracking-wider">
-              Por que nós
+              Diferenciais
             </span>
             <div className="w-12 h-1 bg-accent rounded-full" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Por que escolher a Clínica Dentária Yes Sir?
+            Por que escolher a Clínica Marcelino dos Santos?
           </h2>
           <p className="text-navy-500 max-w-2xl mx-auto text-lg">
-            Somos comprometidos em fornecer cuidados dentários de excelência,
-            combinando profissionalismo, tecnologia moderna e um atendimento
-            verdadeiramente humanizado.
+            Somos comprometidos em fornecer cuidados de saúde de excelência,
+            com foco na prevenção e tratamento da diabetes.
           </p>
         </div>
 

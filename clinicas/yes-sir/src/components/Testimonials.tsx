@@ -18,7 +18,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             O que dizem sobre nós
           </h2>
-          <p className="text-navy-300 max-w-2xl mx-auto text-lg">
+          <p className="text-navy-200 max-w-2xl mx-auto text-lg">
             A satisfação dos nossos pacientes é a nossa maior recompensa.
           </p>
         </div>
