@@ -30,8 +30,8 @@ export default function Services() {
         <div className="relative mb-16 rounded-xl overflow-hidden shadow-xl">
           <div className="relative h-64 sm:h-80 md:h-96">
             <Image
-              src="/images/clinic-interior.jpg"
-              alt="Espaço moderno da Clínica Marcelino dos Santos"
+              src="/images/medical-exam.jpg"
+              alt="Exame médico especializado na Clínica Marcelino dos Santos"
               fill
               className="object-cover"
               sizes="100vw"

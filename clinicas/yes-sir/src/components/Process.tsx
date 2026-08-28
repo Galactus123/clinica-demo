@@ -61,7 +61,7 @@ export default function Process() {
         <div className="mt-16 relative mx-auto max-w-3xl">
           <div className="relative h-64 sm:h-80 rounded-xl overflow-hidden shadow-xl">
             <Image
-              src="/images/medical-care.jpg"
+              src="/images/doctor.jpg"
               alt="Atendimento profissional na Clínica Marcelino dos Santos"
               fill
               className="object-cover"

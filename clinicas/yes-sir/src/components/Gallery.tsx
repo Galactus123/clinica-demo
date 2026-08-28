@@ -4,24 +4,24 @@ import Image from "next/image";
 
 const galleryItems = [
   {
-    src: "/images/clinic-interior.jpg",
+    src: "/images/diabetic-center.jpg",
     alt: "Interior moderno e equipado da Clínica Marcelino dos Santos",
     label: "A Clínica",
   },
   {
-    src: "/images/doctor-consultation.jpg",
+    src: "/images/doctor.jpg",
     alt: "Consulta médica especializada em diabetes",
     label: "Consultas",
   },
   {
-    src: "/images/medical-care.jpg",
-    alt: "Atendimento humanizado aos pacientes",
+    src: "/images/medical-exam.jpg",
+    alt: "Exame médico completo na clínica",
     label: "Atendimento",
   },
   {
-    src: "/images/patient-care.jpg",
-    alt: "Acompanhamento integral do paciente",
-    label: "Acompanhamento",
+    src: "/images/nutritionist.jpg",
+    alt: "Acompanhamento nutricional especializado",
+    label: "Nutrição",
   },
   {
     src: "/images/clinic-modern.jpg",

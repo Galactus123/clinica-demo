@@ -63,7 +63,7 @@ export default function About() {
           <div className="relative">
             <div className="relative h-80 w-full overflow-hidden rounded-xl shadow-2xl sm:h-96">
               <Image
-                src="/images/clinic-interior.jpg"
+                src="/images/diabetic-center-2.jpg"
                 alt="Interior moderno e equipado da Clínica Marcelino dos Santos em Maputo"
                 fill
                 className="object-cover"

@@ -11,8 +11,8 @@ export default function FinalCTA() {
         {/* Left - Image */}
         <div className="relative h-72 sm:h-80 lg:h-auto lg:min-h-[500px]">
           <Image
-            src="/images/medical-care.jpg"
-            alt="Atendimento médico de excelência na Clínica Marcelino dos Santos"
+            src="/images/diabetes-prevention.jpg"
+            alt="Prevenção e cuidados com diabetes na Clínica Marcelino dos Santos"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

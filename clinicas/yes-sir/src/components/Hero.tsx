@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/clinic-interior.jpg"
+          src="/images/diabetic-center.jpg"
           alt="Interior moderno da Clínica Marcelino dos Santos"
           fill
           className="object-cover"
