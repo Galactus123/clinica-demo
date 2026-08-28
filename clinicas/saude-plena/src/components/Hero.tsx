@@ -66,20 +66,20 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative hidden lg:block">
-            <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
+          <div className="relative">
+            <div className="relative w-full h-[400px] sm:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
               <Image
                 src="/images/Doctor _ Health.jpg"
                 alt="Profissional de saúde com estetoscópio em ambiente clínico"
                 fill
                 className="object-cover object-top"
-                sizes="50vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
             </div>
             {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100 animate-float">
+            <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100 animate-float">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10">
                   <span className="text-accent font-bold text-lg">+</span>

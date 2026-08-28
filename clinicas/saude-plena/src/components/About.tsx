@@ -24,7 +24,7 @@ export default function About() {
               />
             </div>
             {/* Secondary image */}
-            <div className="absolute -bottom-8 -right-8 w-36 h-36 sm:w-44 sm:h-44 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden sm:block">
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 sm:w-44 sm:h-44 rounded-xl overflow-hidden shadow-xl border-4 border-white">
               <Image
                 src="/images/home care.jpg"
                 alt="Atendimento humanizado e próximo"
